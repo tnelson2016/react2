@@ -32,8 +32,8 @@ function EditEmployee(props) {
                 <Modal.Body>
                     <form
                         onSubmit={(e) => {
+                            handleClose()
                             e.preventDefault()
-
                             props.updateEmployee(props.id, name, role)
                         }}
                         id="editmodal"
